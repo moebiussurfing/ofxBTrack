@@ -67,7 +67,7 @@ void ofxBTrack::audioIn(float *input, int bufferSize, int nChannels)
 	
 	processBuffer.resize(frameSize);
 	
-	while (buffer.size() > frameSize)
+    while (static_cast<int>(buffer.size()) > frameSize)
 	{
 		for (int i = 0; i < frameSize; i++)
 			processBuffer[i] = buffer[i];
