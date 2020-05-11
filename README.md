@@ -2,10 +2,11 @@
 openFrameworks Addon for Real-Time Beat Tracking - Based on Adam Stark's BTrack algorithm
 
 ## NOTE
-**[FORK] This is a modified version of ofxBTrack / BTrack sources to allow Windows/VS2017 compatible.**  
+**[FORK]**  
+**This is a modified version of ofxBTrack / BTrack sources to allow Windows/VS2017 compatible.**  
 
 - modified example-audioInput.  
-- added some dependencies. check code.  
+- added some dependencies that you can disable and use original examples. Check code fro more info.  
 
 
 ## Screenshot
