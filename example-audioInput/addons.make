@@ -1,1 +1,5 @@
+ofxGui
 ofxBTrack
+ofxSimpleFloatingGui
+ofxSoundDevicesManager
+ofxTextFlow
