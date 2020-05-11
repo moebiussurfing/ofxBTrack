@@ -5,7 +5,9 @@
 #include "ofxBTrack.h"
 
 #include "ofxSoundDevicesManager.h"
+#include "circleBeat.h"
 
+#define INCLUDE_ofxTextFlow//LOG
 
 class ofApp : public ofBaseApp{
 
@@ -25,23 +27,24 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
-        ofxBTrack btrack;
-
-		ofxSoundDevicesManager audioDevices;
 
 		int sampleRate = 44100;
 		int bufferSize = 256;
+    
+        ofxBTrack btrack;
+		CircleBeat circleBeat;
+
+		ofxSoundDevicesManager audioDevices;
 
         void audioIn(float *input, int bufferSize, int nChannels);
 		//void audioIn(ofSoundBuffer& input) override; 
-		void audioOut(ofSoundBuffer& output) override;
 
 		void drawWaveform();
 		float waveformInput[4096]; //make this bigger, just in case
 		int waveInputIndex;
-		float waveformOutput[4096]; //make this bigger, just in case
-		int waveOutputIndex;
 
+#ifdef INCLUDE_ofxTextFlow//LOG
 		void setupLogDebug();
+		void logLine(string s);
+#endif
 };
