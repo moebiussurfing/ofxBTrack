@@ -183,7 +183,6 @@ void ofApp::logLine(string s)
 
 #endif
 
-
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key) {
 

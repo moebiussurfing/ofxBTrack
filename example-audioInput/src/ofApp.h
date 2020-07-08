@@ -7,7 +7,11 @@
 #include "ofxSoundDevicesManager.h"
 #include "circleBeat.h"
 
-#define INCLUDE_ofxTextFlow//LOG
+//LOG
+//#define INCLUDE_ofxTextFlow
+#ifdef INCLUDE_ofxTextFlow
+#include "ofxTextFlow.h"
+#endif
 
 class ofApp : public ofBaseApp{
 
